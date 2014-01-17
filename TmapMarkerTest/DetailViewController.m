@@ -14,6 +14,9 @@
 @end
 
 @implementation DetailViewController
+- (IBAction)clickClose:(id)sender {
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
